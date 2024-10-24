@@ -3,3 +3,4 @@ dash_cytoscape==1.0.2
 networkx==3.2
 numpy==1.23.2
 pandas==1.4.4
+Flask==2.1.3
