@@ -1,9 +1,7 @@
 # IMPORT
 from dash import Dash, html, dcc, Input, Output, State, callback
 import dash_cytoscape as cyto
-import dash_daq as daq
 import numpy as np
-import scipy.stats as stats
 import pandas as pd
 import pickle
 import networkx as nx
