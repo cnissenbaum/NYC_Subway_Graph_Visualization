@@ -517,6 +517,7 @@ cyto_stylesheet = [
 
 ## Define the App
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div(style={"font-family" : "courier new", 'whiteSpace': "pre-wrap",}, children=[
 
@@ -720,6 +721,5 @@ def update_elements(node_size_factor,edge_size_factor,
 PORT = 8000
 ADDRESS = "0.0.0.0"
 # Run Server
-app.run_server(debug=False,host=ADDRESS)
-
-server = app.server
+if __name__ == '__main__':
+    app.run_server(debug=False,host=ADDRESS,port=PORT)
