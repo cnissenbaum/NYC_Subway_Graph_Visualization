@@ -720,4 +720,4 @@ def update_elements(node_size_factor,edge_size_factor,
 PORT = 8000
 ADDRESS = "0.0.0.0"
 # Run Server
-app.run_server(debug=False,port=PORT,host=ADDRESS)
+app.run_server(debug=False,host=ADDRESS)
