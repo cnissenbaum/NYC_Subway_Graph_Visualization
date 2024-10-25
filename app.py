@@ -341,12 +341,20 @@ def avg_num_routes(G):
     return np.round(np.mean(r),2)
 
 def avg_travel_time(G):
+
+    if len(G.edges) == 0:
+        return 0
+    
     t = []
     for edge in G.edges():
         t += [edge_data[edge]['travel time']]
     return int(np.round(np.mean(t)))
 
 def avg_demand(G):
+
+    if len(G.edges) == 0:
+        return 0
+    
     t = []
     for edge in G.edges():
         t += [edge_data[edge]['demand']]
